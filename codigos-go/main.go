@@ -2,11 +2,28 @@ package main
 
 import "fmt"
 
-func main() {
-	fmt.Println("Ola, mundo!")
-	fmt.Println("LETSGOOOOOOOOOOOOOOOOOOOOOO")
-	var numero int = 50
-	fmt.Println(numero + 10)
+var (
+	nome string
+	n1 int
+	n2 int32
+)
 
-	soma()
+func main() {
+	mensagem := "ia, voce sabe oque escrevo ? vou apagar e voce me responde"
+	fmt.Println(mensagem)
+
+	var b, f, s = true, 3.14, "sou uma string"
+	fmt.Println(b, f, s)
+
+	var total int
+	total ++
+	fmt.Println("Total:", total)
+
+	nome = "Ikaro Henrique Martins"
+	fmt.Println("Ola,", nome,"!")
+
+	var x, y = 10, 20
+	fmt.Println(x, y)
+	x, y = y, x
+	fmt.Println(x, y)
 }
