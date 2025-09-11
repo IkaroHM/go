@@ -8,13 +8,6 @@ type Entregador struct {
 	meta int
 }
 
-var entregador Entregador = Entregador{
-	nome: "Ikaro",
-	entregas: 5,
-	meta: 4,
-}
-
-
 func (f Entregador) meta_entrega() {
 	if f.entregas >= f.meta {
 		fmt.Println(f.nome, "Bateu a meta!")
@@ -24,5 +17,10 @@ func (f Entregador) meta_entrega() {
 }
 
 func main() {
-	entregador.meta_entrega()
+	entregadores := []Entregador{
+		{"Ikaro", 20, 10}, 
+		{"Jao", 10, 11},
+		{"Clebiosmar", 500, 300},
+	}
+	Entregador.meta_entrega(entregadores[1])
 }
